@@ -16,7 +16,7 @@ LUCI_TITLE:=LuCI support for Kcptun
 LUCI_DEPENDS:=+jshn +wget +luci-lib-jsonc
 LUCI_PKGARCH:=all
 
-include ../../luci.mk
+include $(TOPDIR)/feeds/luci/luci.mk
 
 define Package/$(PKG_NAME)/config
 # shown in make menuconfig <Help>
